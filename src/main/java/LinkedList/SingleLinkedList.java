@@ -41,6 +41,7 @@ public class SingleLinkedList {
                 tempNode = tempNode.next;
                 index++;
             }
+            // The issue was here where the inserted node was failing to point to the next node
             node.next = tempNode.next;
             tempNode.next = node;
         }
